@@ -1,0 +1,85 @@
+{
+  "type": "APLA",
+  "version": "0.91",
+  "description": "This document demonstrates key components used to create audio responses.",
+  "compositions": {
+    "MatthewVoice": {
+      "parameters": [
+        {
+          "name": "speechContent",
+          "type": "string"
+        }
+      ],
+      "items": [
+        {
+          "type": "Speech",
+          "contentType": "SSML",
+          "content": "<speak><voice name='Matthew'><lang xml:lang='en-US'>${speechContent}</lang></voice></speak>"
+        }
+      ]
+    },
+    "KendraVoice": {
+      "parameters": [
+        {
+          "name": "speechContent",
+          "type": "string"
+        }
+      ],
+      "items": [
+        {
+          "type": "Speech",
+          "contentType": "SSML",
+          "content": "<speak><voice name='Kendra'><lang xml:lang='en-US'>${speechContent}</lang></voice></speak>"
+        }
+      ]
+    }
+  },
+  "resources": [],
+  "mainTemplate": {
+      "parameters": [
+          "payload"
+      ],
+      "item": {
+          "type": "Mixer",
+          "description": "The Mixer component plays a set of audio clips at the same time. See docs for more information.",
+          "items": [
+              {
+                  "type": "Sequencer",
+                  "description": "The Sequencer component plays a series of audio clips one after another.",
+                  "items": [
+                      {
+                        "type": "MatthewVoice",
+                        "speechContent": "O great Freya<break time='1s'/> Choose a tarot"
+                 
+                      },
+                      {
+                        "type": "Silence",
+                        "duration": 1000
+                      },
+                      {
+                        "type": "KendraVoice",
+                        "speechContent": "${payload.myTarotData.ssml}"
+                 
+                      }
+                  ]
+              },
+              {
+                  "type": "Audio", 
+                  "description": "The Audio component plays the provided audio file, such as an MP3 file. See docs for more information.",
+                  "source": "soundbank://soundlibrary/magic_spells/magic_spells_15",
+                  "duration": "trimToParent",
+                  "filter": [
+                      {
+                          "type": "Volume",
+                          "amount": "30%"
+                      },
+                      {
+                        "type": "Repeat",
+                        "repeatCount": -1
+                      }
+                   ]
+              }
+          ]
+      }
+  }
+}

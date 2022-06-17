@@ -1,0 +1,337 @@
+{
+    "type": "APL",
+    "version": "1.9",
+    "theme": "light",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": {
+            "type": "VectorGraphic",
+            "source": "myGraphic",
+            "width": "100%",
+            "height": "100%",
+            "scale": "best-fit",
+            "align": "center",
+            "frame": "${(elapsedTime*0.03)%41}"
+        }
+    },
+    "graphics": {
+        "myGraphic": {
+            "type": "AVG",
+            "version": "1.2",
+            "width": 500,
+            "height": 500,
+            "items": [
+                {
+                    "type": "group",
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "translateX": -188,
+                                    "translateY": -162,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-228 C57.438,-228 104,-125.921 104,0 C104,125.921 57.438,228 0,228 C-57.438,228 -104,125.921 -104,0 C-104,-125.921 -57.438,-228 0,-228 z",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 15,
+                                            "strokeLineCap": "round",
+                                            "strokeLineJoin": "round",
+                                            "strokeDashArray": [
+                                                96,
+                                                100
+                                            ],
+                                            "strokeDashOffset": "-${(4-@ease5(frame))}",
+                                            "pathLength": 100
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": 338,
+                            "translateY": 430,
+                            "pivotX": -188,
+                            "pivotY": -162
+                        },
+                        {
+                            "items": [
+                                {
+                                    "translateX": 402,
+                                    "translateY": -192,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-28 a28,28 0 0 1  0,56 a28,28 0 0 1  0,-56",
+                                            "fill": "rgb(227,227,227,1)"
+                                        },
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-28 a28,28 0 0 1  0,56 a28,28 0 0 1  0,-56",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 15,
+                                            "strokeLineCap": "butt",
+                                            "strokeLineJoin": "miter"
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": "${(@ease3(frame)-402)}",
+                            "translateY": "${(@ease4(frame)+192)}",
+                            "pivotX": 402,
+                            "pivotY": -192,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ],
+                    "translateX": 100,
+                    "translateY": -18,
+                    "pivotX": 150,
+                    "pivotY": 268,
+                    "scaleX": "${(@ease2(frame)*0.01)}",
+                    "scaleY": "${(@ease2(frame)*0.01)}",
+                    "rotation": 120
+                },
+                {
+                    "type": "group",
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "translateX": -188,
+                                    "translateY": -162,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-228 C57.438,-228 104,-125.921 104,0 C104,125.921 57.438,228 0,228 C-57.438,228 -104,125.921 -104,0 C-104,-125.921 -57.438,-228 0,-228 z",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 15,
+                                            "strokeLineCap": "round",
+                                            "strokeLineJoin": "round",
+                                            "strokeDashArray": [
+                                                96,
+                                                100
+                                            ],
+                                            "strokeDashOffset": "-${(4-@ease5(frame))}",
+                                            "pathLength": 100
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": 338,
+                            "translateY": 430,
+                            "pivotX": -188,
+                            "pivotY": -162
+                        },
+                        {
+                            "items": [
+                                {
+                                    "translateX": 402,
+                                    "translateY": -192,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-28 a28,28 0 0 1  0,56 a28,28 0 0 1  0,-56",
+                                            "fill": "rgb(227,227,227,1)"
+                                        },
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-28 a28,28 0 0 1  0,56 a28,28 0 0 1  0,-56",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 15,
+                                            "strokeLineCap": "butt",
+                                            "strokeLineJoin": "miter"
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": "${(@ease3(frame)-402)}",
+                            "translateY": "${(@ease4(frame)+192)}",
+                            "pivotX": 402,
+                            "pivotY": -192,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ],
+                    "translateX": 100,
+                    "translateY": -18,
+                    "pivotX": 150,
+                    "pivotY": 268,
+                    "scaleX": "${(@ease2(frame)*0.01)}",
+                    "scaleY": "${(@ease2(frame)*0.01)}",
+                    "rotation": 240
+                },
+                {
+                    "type": "group",
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "translateX": -188,
+                                    "translateY": -162,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-228 C57.438,-228 104,-125.921 104,0 C104,125.921 57.438,228 0,228 C-57.438,228 -104,125.921 -104,0 C-104,-125.921 -57.438,-228 0,-228 z",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 15,
+                                            "strokeLineCap": "round",
+                                            "strokeLineJoin": "round",
+                                            "strokeDashArray": [
+                                                96,
+                                                100
+                                            ],
+                                            "strokeDashOffset": "-${(4-@ease5(frame))}",
+                                            "pathLength": 100
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": 338,
+                            "translateY": 430,
+                            "pivotX": -188,
+                            "pivotY": -162
+                        },
+                        {
+                            "items": [
+                                {
+                                    "translateX": 402,
+                                    "translateY": -192,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-28 a28,28 0 0 1  0,56 a28,28 0 0 1  0,-56",
+                                            "fill": "rgb(227,227,227,1)"
+                                        },
+                                        {
+                                            "type": "path",
+                                            "pathData": "M0,-28 a28,28 0 0 1  0,56 a28,28 0 0 1  0,-56",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 15,
+                                            "strokeLineCap": "butt",
+                                            "strokeLineJoin": "miter"
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": "${(@ease3(frame)-402)}",
+                            "translateY": "${(@ease4(frame)+192)}",
+                            "pivotX": 402,
+                            "pivotY": -192,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ],
+                    "translateX": 100,
+                    "translateY": -18,
+                    "pivotX": 150,
+                    "pivotY": 268,
+                    "scaleX": "${(@ease2(frame)*0.01)}",
+                    "scaleY": "${(@ease2(frame)*0.01)}"
+                },
+                {
+                    "items": [
+                        {
+                            "translateX": -78,
+                            "translateY": -76,
+                            "items": [
+                                {
+                                    "type": "path",
+                                    "pathData": "M94.00010014271336,121.99993992686989 L-58.65499716548802,142.40644464530598 L-152.65509730820142,20.406504718436175 L-94.00010014271349,-121.9999399268698 L58.654997165488,-142.40644464530598 L152.65509730820142,-20.40650471843619 z",
+                                    "fill": "rgb(39,121,247,1)"
+                                },
+                                {
+                                    "type": "path",
+                                    "pathData": "M94.00010014271336,121.99993992686989 L-58.65499716548802,142.40644464530598 L-152.65509730820142,20.406504718436175 L-94.00010014271349,-121.9999399268698 L58.654997165488,-142.40644464530598 L152.65509730820142,-20.40650471843619 z",
+                                    "stroke": "rgb(39,121,247,1)",
+                                    "strokeWidth": 0,
+                                    "strokeLineCap": "round",
+                                    "strokeLineJoin": "round"
+                                }
+                            ],
+                            "type": "group"
+                        }
+                    ],
+                    "type": "group",
+                    "translateX": 328,
+                    "translateY": 326,
+                    "pivotX": -78,
+                    "pivotY": -76,
+                    "scaleX": "${(@ease1(frame)*0.01)}",
+                    "scaleY": "${(@ease1(frame)*0.01)}",
+                    "rotation": 38
+                },
+                {
+                    "type": "group",
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "translateX": -78,
+                                    "translateY": -76,
+                                    "items": [
+                                        {
+                                            "type": "path",
+                                            "pathData": "M94.00010014271336,121.99993992686989 L-58.65499716548802,142.40644464530598 L-152.65509730820142,20.406504718436175 L-94.00010014271349,-121.9999399268698 L58.654997165488,-142.40644464530598 L152.65509730820142,-20.40650471843619 z",
+                                            "fill": "rgb(254,254,254,1)"
+                                        },
+                                        {
+                                            "type": "path",
+                                            "pathData": "M94.00010014271336,121.99993992686989 L-58.65499716548802,142.40644464530598 L-152.65509730820142,20.406504718436175 L-94.00010014271349,-121.9999399268698 L58.654997165488,-142.40644464530598 L152.65509730820142,-20.40650471843619 z",
+                                            "stroke": "rgb(39,121,247,1)",
+                                            "strokeWidth": 0,
+                                            "strokeLineCap": "round",
+                                            "strokeLineJoin": "round"
+                                        }
+                                    ],
+                                    "type": "group"
+                                }
+                            ],
+                            "type": "group",
+                            "translateX": 328,
+                            "translateY": 326,
+                            "pivotX": -78,
+                            "pivotY": -76,
+                            "scaleX": "${(@ease1(frame)*0.01)}",
+                            "scaleY": "${(@ease1(frame)*0.01)}",
+                            "rotation": 38
+                        }
+                    ],
+                    "pivotX": 250,
+                    "pivotY": 250,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                }
+            ],
+            "parameters": [
+                {
+                    "name": "frame",
+                    "value": 0
+                }
+            ],
+            "resources": [
+                {
+                    "easing": {
+                        "ease1": "curve(0,40,0.333,0,0.667,1) curve(20,45,0.333,0,0.667,1) end(40,40)",
+                        "ease2": "curve(0,80,0.333,0,0.667,1) curve(20,75,0.333,0,0.667,1) end(40,80)",
+                        "ease3": "spatial(3,0) scurve(0,149,39,0,57.438,0,0,0,-125.921,0,0.167,0.167,0.833,0.833) scurve(9.999,253,267,0,0,125.921,0,57.438,0,0,0.167,0.167,0.833,0.833) scurve(20,149,495,0,-57.438,0,0,0,125.921,0,0.167,0.167,0.833,0.833) scurve(30,45,267,0,0,-125.921,0,-57.438,0,0,0.167,0.167,0.833,0.833) send(40,149,39,0)",
+                        "ease4": "spatial(3,1) scurve(0,149,39,0,57.438,0,0,0,-125.921,0,0.167,0.167,0.833,0.833) scurve(9.999,253,267,0,0,125.921,0,57.438,0,0,0.167,0.167,0.833,0.833) scurve(20,149,495,0,-57.438,0,0,0,125.921,0,0.167,0.167,0.833,0.833) scurve(30,45,267,0,0,-125.921,0,-57.438,0,0,0.167,0.167,0.833,0.833) send(40,149,39,0)",
+                        "ease5": "curve(0,0,0.167,0.167,0.833,0.833) end(40,360)"
+                    }
+                }
+            ]
+        }
+    }
+}

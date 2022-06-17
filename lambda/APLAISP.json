@@ -1,0 +1,68 @@
+{
+    "type": "APLA",
+    "version": "0.91",
+    "description": "More complex example that plays two speech components, one after another",
+    "compositions": {
+      "MatthewVoice": {
+        "parameters": [
+          {
+            "name": "speechContent",
+            "type": "string"
+          }
+        ],
+        "items": [
+          {
+            "type": "Speech",
+            "contentType": "SSML",
+            "content": "<speak><voice name='Matthew'><lang xml:lang='en-US'>${speechContent}</lang></voice></speak>"
+          }
+        ]
+      },
+      "KendraVoice": {
+        "parameters": [
+          {
+            "name": "speechContent",
+            "type": "string"
+          }
+        ],
+        "items": [
+          {
+            "type": "Speech",
+            "contentType": "SSML",
+            "content": "<speak><voice name='Kendra'><lang xml:lang='en-US'>${speechContent}</lang></voice></speak>"
+          }
+        ]
+      }
+    },
+    "mainTemplate": {
+      "parameters": [
+        "payload"
+      ],
+      "items": [
+        {
+          "type": "Mixer",
+          "items": [
+            {
+              "type": "KendraVoice",
+              "speechContent": "${payload.myData.ssml}"
+            },
+            {
+              "type": "Audio",
+              "source": "${payload.myData.audio}",
+              "duration": "trimToParent",
+              "filters": [
+                {
+                  "type": "Volume",
+                  "amount": "10%"
+                },
+                {
+                  "type": "Repeat",
+                  "repeatCount": -1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

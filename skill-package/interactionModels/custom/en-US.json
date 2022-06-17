@@ -1,0 +1,58 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "norse tarot reader",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ReadTarotIntent",
+                    "slots": [],
+                    "samples": [
+                        "Read my fortune today",
+                        "Tell me my fortune",
+                        "Fortune for today",
+                        "My fortune",
+                        "give me my fortune",
+                        "Fortune",
+                        "Read a card",
+                        "Show my fortune",
+                        "Reveal my fortune"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
